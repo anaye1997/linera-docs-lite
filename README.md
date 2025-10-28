@@ -1,7 +1,7 @@
 # Linera Docs Lite
 
 ## Vercel Demo
-https://linera-docs-lite-5eu71g4kv-anathans-projects-f28c505e.vercel.app/
+https://linera-docs-lite-5eu71g4kv-anathans-projects-f28c505e.vercel.app?_vercel_share=4LbYSdalx9qvCVqvlLncy6ade9nXAogb
 
 ## Build Dev
 ```bash
