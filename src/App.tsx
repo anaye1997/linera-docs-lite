@@ -73,7 +73,7 @@ function ToolButton({ icon: Icon, label, onClick, ariaLabel }: ToolButtonProps) 
 export default function DocEditor() {
   const editorRef = useRef<HTMLDivElement>(null);
   const titleRef = useRef<HTMLInputElement>(null);
-  const [title, setTitle] = useState<string>("Untitled document (Gmicrochains)");
+  const [title, setTitle] = useState<string>("Untitled (Gmicrochains)");
   const [html, setHtml] = useState<string>("<p><br/></p>");
   const [lastSaved, setLastSaved] = useState<string | null>(null);
   const [bootstrapped, setBootstrapped] = useState<boolean>(false);
@@ -153,7 +153,7 @@ export default function DocEditor() {
   const newDocument = (): void => {
     const confirmed = window.confirm("Start a new document? Unsaved changes will be lost.");
     if (!confirmed) return;
-    setTitle("Untitled document (Gmicrochains)");
+    setTitle("Untitled (Gmicrochains)");
     setHtml("<p><br/></p>");
     setTimeout(() => {
       if (editorRef.current) editorRef.current.innerHTML = "<p><br/></p>";
